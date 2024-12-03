@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /cleaning-service
+jwt:
+  secret: iCGSteqVeKHQ2RI/OeUVl0L0eLgn4JLVgLaliQmQMTo3ejZXOD44D4EVQIjzN09WgLEJKaOlMTnT+URU3Qc9YA==
+  lifetime: 30m
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: none
+  show-sql: true
+spring.datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/cleaning_service
+  username: egoravdeev
+  password: admin
+spring:
+  sql:
+    init:
+      platform: postgres
+  main:
+    allow-circular-references: true
